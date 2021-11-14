@@ -39,7 +39,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: $ {{ secrets.DOCKER_USERNAME }}/yamdb_final:latest
+          tags: ${{ secrets.DOCKER_USERNAME }}/yamdb_final:latest
   deploy:
     name: Deploy on server
     runs-on: ubuntu-latest

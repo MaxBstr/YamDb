@@ -8,7 +8,7 @@ services:
     env_file:
       - ./.env
   web:
-    build: .
+    image: maxbstr/yamdb_final:latest
     restart: always
     volumes:
       - static_value:/code/static/

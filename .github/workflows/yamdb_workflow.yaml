@@ -52,10 +52,9 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USER }}
           key: ${{ secrets.SSH }}
-          passphrase: ${{ secrets.PASSPHRASE }}
           stack_file_name: docker-compose.yaml
           script: |
-            sudo docker pull {{ secrets.DOCKER_USERNAME }}/yamdb_final
+            sudo docker pull ${{ secrets.DOCKER_USERNAME }}/yamdb_final
             sudo docker-compose stop
             sudo docker-compose rm web
             touch .env

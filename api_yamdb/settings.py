@@ -9,7 +9,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 SECRET_KEY = str(os.getenv('DJANGO_KEY'))
 
-DEBUG = False # можешь, пожалуйста, уточнить про это (пред ревью)
+DEBUG = False  # можешь, пожалуйста, уточнить про это (пред ревью)
 
 ALLOWED_HOSTS = [i.split(".") for i in os.environ.get("ALLOWED_HOSTS").split(" ")]
 

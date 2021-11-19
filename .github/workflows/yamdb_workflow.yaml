@@ -72,8 +72,8 @@ jobs:
             echo DJANGO_KEY=${{ secrets.DJANGO_KEY }} >> .env
             echo ALLOWED_HOSTS=${{ secrets.ALLOWED_HOSTS }} >> .env
             sudo docker-compose up -d
-            sudo docker-compose exec web python manage.py migrate --noinput
-            sudo docker-compose exec web python manage.py collectstatic --no-input
+            sudo docker-compose exec -T web python manage.py migrate --noinput
+            sudo docker-compose exec -T web python manage.py collectstatic --no-input
   send_message:
     name: Notify through telegram.
     runs-on: ubuntu-latest

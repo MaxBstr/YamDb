@@ -7,13 +7,13 @@ load_dotenv()
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-# SECRET_KEY = str(os.getenv('DJANGO_KEY'))
-SECRET_KEY = "p&l%385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs"
+SECRET_KEY = str(os.getenv('DJANGO_KEY'))
+# SECRET_KEY = "p&l%385148kslhtyn^##a1)ilz@4zqj=rq&agdol^##zgl9(vs"
 
 DEBUG = False  # Можешь, пожалуйста, уточнить про это (пред ревью)
 
-# ALLOWED_HOSTS = [i.split(".") for i in os.environ.get("ALLOWED_HOSTS").split(" ")]
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = [i.split(".") for i in os.environ.get("ALLOWED_HOSTS").split(" ")]
+# ALLOWED_HOSTS = ["*"]
 
 # P.S. у меня не работают тесты (джоба в CI/CD), потому что не видит .env файл;
 # Только на стадии deploy он появляется на сервере;

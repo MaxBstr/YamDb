@@ -11,8 +11,8 @@ SECRET_KEY = str(os.environ.get('DJANGO_KEY'))
 
 DEBUG = False  # Можешь, пожалуйста, уточнить про это (пред ревью)
 
-ALLOWED_HOSTS = [i.split(".") for i in os.environ.get("ALLOWED_HOSTS").split(" ")]
-
+#ALLOWED_HOSTS = [i.split(".") for i in os.environ.get("ALLOWED_HOSTS").split(" ")]
+ALLOWED_HOSTS = ["*"]
 INSTALLED_APPS = [
     'api',
     'api_yamdb',

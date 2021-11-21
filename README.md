@@ -1,5 +1,5 @@
 ![Yamdb_workflow](https://github.com/MaxBstr/yamdb_final/workflows/yamdb_workflow.yaml/badge.svg)
-# REST API для сервиса - база отзывов о фильмах, книгах и музыке.
+# REST API для сервиса - база отзывов о фильмах, книгах и музыке
 
 
 С использованием CI/CD.

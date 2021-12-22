@@ -66,7 +66,7 @@ python manage.py collectstatic --noinput
 python manage.py migrate --noinput
 python manage.py migrate
 ```
-4. Для использования панели администратора по адресу http://178.154.241.226/admin/ необходимо создать суперпользователя.
+4. Для использования панели администратора по адресу http:/localhost/admin/ необходимо создать суперпользователя.
 ```
 python manage.py createsuperuser
 ```
@@ -74,6 +74,3 @@ python manage.py createsuperuser
 
 ## Технологии используемые в проекте
 Python, Django, Django REST Framework (DRF), PostgreSQL, Nginx, Docker & Docker-compose, GitHub Actions CI/CD
-
-## Развернутый проект можно посмотреть по ссылке:
-http://178.154.241.226/api/v1/
